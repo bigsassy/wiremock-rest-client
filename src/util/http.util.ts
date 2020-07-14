@@ -6,6 +6,8 @@ import { LogUtil } from './log.util';
 export class HttpUtil {
     static proxy;
 
+    static headers;
+
     static async fetch(uri: string, options: any): Promise<any> {
         const id: string = nanoid();
         const allOptions: any = { 'Content-Type': 'application/json', ...options };
@@ -13,6 +15,10 @@ export class HttpUtil {
         if (HttpUtil.proxy) {
             allOptions.agent = new HttpsProxyAgent(HttpUtil.proxy);
             LogUtil.logger().debug(`[${id}] Using proxy: ${HttpUtil.proxy}`);
+        }
+
+        if (HttpUtil.headers) {
+            allOptions.headers = HttpUtil.headers;
         }
 
         try {

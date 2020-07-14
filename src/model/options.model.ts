@@ -7,4 +7,6 @@ export interface Options {
   proxy?: string;
 
   continueOnFailure?: boolean;
+
+  headers?: { [key: string]: any };
 }
