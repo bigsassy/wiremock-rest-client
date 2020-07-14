@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kwoding/wiremock-rest-client.git"
+    "url": "https://github.com/bigsassy/wiremock-rest-client.git"
   },
   "author": "Kwo Ding",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kwoding/wiremock-rest-client/issues"
+    "url": "https://github.com/bigsassy/wiremock-rest-client/issues"
   },
-  "homepage": "https://github.com/kwoding/wiremock-rest-client#readme",
+  "homepage": "https://github.com/bigsassy/wiremock-rest-client#readme",
   "keywords": [
     "wiremock",
     "mock",
